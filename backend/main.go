@@ -41,7 +41,7 @@ func main() {
 
 	app.Use(requestid.New())
 
-	InjectRoutes(app)
+	InjectRoutes(app) // InjectRoutes Function is not defined
 
 	port := configValues.Port
 	lgr.Fatal(app.Listen(":" + port))
